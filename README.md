@@ -1,4 +1,4 @@
-# Test Automation Framework
+# Test Automation Framework for WSD Automation Task
 
 A Playwright TypeScript test automation framework for testing the Practice Software Testing website.
 
@@ -20,6 +20,7 @@ npx playwright install
 
 ## Framework Structure
 
+```
 src/
 ├── config/
 │   ├── test-data.ts      # Test data configuration
@@ -36,25 +37,30 @@ tests/
 │   └── contact-form.spec.ts    # Contact form tests
 └── cart/
     └── cart-functionality.spec.ts  # Cart functionality tests
+```
 
 ## Running Tests
 
-### Run all tests
-
+### Run all tests:
+```bash
 npx playwright test
+```
 
-### Run specific test files
-
+### Run specific test files:
+```bash
 npx playwright test tests/contact/contact-form.spec.ts
 npx playwright test tests/cart/cart-functionality.spec.ts
+```
 
-### Run tests in headed mode (see browser)
-
+### Run tests in headed mode (see browser):
+```bash
 npx playwright test --headed
+```
 
-### View test report
-
+### View test report:
+```bash
 npx playwright show-report
+```
 
 ## Test Coverage
 
